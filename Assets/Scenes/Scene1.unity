@@ -1616,6 +1616,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1734078138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1371286967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2421586746426457928, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
+  m_PrefabInstance: {fileID: 1538818748639331255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1408381882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2965,38 +2970,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatHero
       objectReference: {fileID: 0}
-    - target: {fileID: 4802719379371967032, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5997832142150091106, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
-    - target: {fileID: 5997832142150091106, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: jumpForce
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6242252152364325418, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_Size.y
-      value: 0.513273
-      objectReference: {fileID: 0}
-    - target: {fileID: 6242252152364325418, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.24832821
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958151600884499086, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958151600884499086, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958151600884499086, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
+    - target: {fileID: 6541245685228064434, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 1371286967}
     - target: {fileID: 6958151600884499086, guid: 57120a66a1ebe0a41847868a0b09044f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.061
@@ -3050,6 +3031,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130470894362262832, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829542120614372387, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3064,6 +3049,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829542120614372387, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2421586746426457928, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2943156807154659297, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
@@ -3279,7 +3268,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1322248230275429047, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 678b7589793ac1c4683d2fe7f61c1719, type: 3}
@@ -3291,9 +3281,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1578681066}
     m_Modifications:
+    - target: {fileID: 4679606826939632151, guid: 4b6013720fa010e438eb10ea2f629999, type: 3}
+      propertyPath: m_Size.x
+      value: 0.07903746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679606826939632151, guid: 4b6013720fa010e438eb10ea2f629999, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.04048127
+      objectReference: {fileID: 0}
     - target: {fileID: 8660140324095110523, guid: 4b6013720fa010e438eb10ea2f629999, type: 3}
       propertyPath: m_Name
       value: tilemap_packed_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660140324095110523, guid: 4b6013720fa010e438eb10ea2f629999, type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 9149489559060238843, guid: 4b6013720fa010e438eb10ea2f629999, type: 3}
       propertyPath: m_LocalPosition.x

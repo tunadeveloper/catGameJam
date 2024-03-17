@@ -13,6 +13,8 @@ public class enemyNPC : MonoBehaviour
     private Rigidbody2D rb;
     private float nextFireTime;
 
+    bool facingRight = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,6 +35,16 @@ public class enemyNPC : MonoBehaviour
             {
                 nextFireTime = Time.time + 1f / fireRate;
                 FireProjectile();
+            }
+
+            if (direction.x < 0 && facingRight)
+            {
+                Flip();
+            }
+
+            else if (direction.x > 0 && !facingRight)
+            {
+                Flip();
             }
         }
     }
@@ -58,5 +70,11 @@ public class enemyNPC : MonoBehaviour
             //score scriptimde sadece can sayýmý statik þekilde tutuyorum ordan azaltýp sonrasýnda kalpleri açýp kapatýcaðým
             Score.lives--;        
         }
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
     }
 }

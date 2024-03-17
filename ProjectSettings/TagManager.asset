@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Key
+  - Door
+  - CatFood
+  - Dead
   layers:
   - Default
   - TransparentFX
