@@ -6,12 +6,21 @@ public class inventory : MonoBehaviour
 {
     private bool hasKey = false;
     private bool hasFood = false;
+    public AudioSource collectSound;
+    public AudioSource foodSound;
+
+    private void Awake()
+    {
+        collectSound = GetComponent<AudioSource>();
+        foodSound = GetComponent<AudioSource>();
+    }
 
     // Anahtar Gel burayaaaaaa 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Key"))
         {
+            collectSound.Play();
             hasKey = true;
             Destroy(collision.gameObject);
             
@@ -19,6 +28,7 @@ public class inventory : MonoBehaviour
 
         if (collision.gameObject.CompareTag("CatFood"))
         {
+            foodSound.Play();
             hasFood = true;
             Destroy(collision.gameObject);
         }

@@ -7,10 +7,12 @@ public class dangerZone : MonoBehaviour
 {
     //Bu dosya karakterin can kaybedeceði yerlere kooyulacak
     private Scene scene;
+    private AudioSource hitSound;
     private void Awake()
     {
         //eðer engele takýlýrsan ayný acýlarý bir daha yaþayacaksýn muhuhuhahahah
         scene = SceneManager.GetActiveScene();
+        hitSound = GetComponent<AudioSource>();
         Debug.Log(scene.name);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,6 +21,7 @@ public class dangerZone : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             //score scriptimde sadece can sayýmý statik þekilde tutuyorum ordan azaltýp sonrasýnda kalpleri açýp kapatýcaðým
+            hitSound.Play();
             Score.lives--;
             SceneManager.LoadScene(scene.name);
         }
