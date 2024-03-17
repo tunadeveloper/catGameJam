@@ -23,7 +23,7 @@ public class enemyNPC : MonoBehaviour
         if (target != null)
         {
             // NPC'nin karaktere doðru hareket etmesi için gerekli vektör hesaplamasýný yaptýk
-            Vector2 direction = (target.position - transform.position).normalized;
+            Vector2 direction = new Vector2((target.position.x - transform.position.x), transform.position.y).normalized;
 
             // Canilerin hareketini saðlýyor bu
             rb.velocity = direction * speed;
@@ -56,8 +56,7 @@ public class enemyNPC : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //score scriptimde sadece can sayýmý statik þekilde tutuyorum ordan azaltýp sonrasýnda kalpleri açýp kapatýcaðým
-            Score.lives--;
-            
+            Score.lives--;        
         }
     }
 }
