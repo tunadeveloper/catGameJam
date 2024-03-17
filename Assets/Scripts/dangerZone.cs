@@ -7,6 +7,7 @@ public class dangerZone : MonoBehaviour
 {
     //Bu dosya karakterin can kaybedeceði yerlere kooyulacak
     private Scene scene;
+    public AudioClip hitFile;
     private AudioSource hitSound;
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class dangerZone : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             //score scriptimde sadece can sayýmý statik þekilde tutuyorum ordan azaltýp sonrasýnda kalpleri açýp kapatýcaðým
+            hitSound.clip = hitFile;
             hitSound.Play();
             Score.lives--;
             SceneManager.LoadScene(scene.name);

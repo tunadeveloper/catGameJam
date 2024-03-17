@@ -6,11 +6,14 @@ public class inventory : MonoBehaviour
 {
     private bool hasKey = false;
     private bool hasFood = false;
-    public AudioSource collectSound;
-    public AudioSource foodSound;
+    public AudioClip collectFile;
+    public AudioClip foodFile;  
+    private AudioSource collectSound;
+    private AudioSource foodSound;
 
     private void Awake()
     {
+        
         collectSound = GetComponent<AudioSource>();
         foodSound = GetComponent<AudioSource>();
     }
@@ -20,6 +23,7 @@ public class inventory : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Key"))
         {
+            collectSound.clip = collectFile;
             collectSound.Play();
             hasKey = true;
             Destroy(collision.gameObject);
@@ -28,6 +32,7 @@ public class inventory : MonoBehaviour
 
         if (collision.gameObject.CompareTag("CatFood"))
         {
+            foodSound.clip = foodFile;
             foodSound.Play();
             hasFood = true;
             Destroy(collision.gameObject);

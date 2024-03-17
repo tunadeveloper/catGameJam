@@ -7,7 +7,8 @@ public class nextLevel1 : MonoBehaviour
 {
     Scene scene;
     public inventory inventory;
-    public AudioSource levelFinished;
+    public AudioClip levelFile;
+    private AudioSource levelFinished;
     private void Awake()
     {
         //scene imi burda cach ediyoruuuuuz
@@ -19,6 +20,7 @@ public class nextLevel1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && inventory.HasKeyInInventory())
         {
+            levelFinished.clip = levelFile;
             levelFinished.Play();
             SceneManager.LoadScene(scene.buildIndex + 1);
             inventory.setKey(false);
