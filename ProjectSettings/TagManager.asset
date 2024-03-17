@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Key
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -44,20 +42,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: background
-    uniqueID: 4285647601
+    uniqueID: 620623997
     locked: 0
-  - name: cats
-    uniqueID: 2936733779
+  - name: yurume
+    uniqueID: 34628589
     locked: 0
-  - name: ev
-    uniqueID: 1000223509
-    locked: 0
-  - name: Yurume
-    uniqueID: 3086773467
+  - name: kutular
+    uniqueID: 3433351043
     locked: 0
   - name: aksesuar
-    uniqueID: 3939289491
-    locked: 0
-  - name: player
-    uniqueID: 698285043
+    uniqueID: 2733027095
     locked: 0
