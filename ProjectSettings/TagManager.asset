@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Key
-  - Door
-  - CatFood
-  - Dead
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -45,22 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: background
-    uniqueID: 4285647601
-    locked: 0
-  - name: cats
-    uniqueID: 2936733779
-    locked: 0
-  - name: ev
-    uniqueID: 1000223509
-    locked: 0
-  - name: Yurume
-    uniqueID: 3086773467
-    locked: 0
-  - name: aksesuar
-    uniqueID: 3939289491
-    locked: 0
-  - name: player
-    uniqueID: 698285043
     locked: 0
